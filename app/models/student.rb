@@ -5,6 +5,8 @@ class Student < ActiveRecord::Base
   def show
     @student = Student.find(params[:id])
   end
+  def new
+  end
   def index
     @students = Student.all
   end
